@@ -80,7 +80,7 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background-color: black;
+	background: url("bg.png");
 	padding: 40px 0;
 }
 
