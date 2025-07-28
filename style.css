@@ -1,5 +1,5 @@
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -84,7 +84,7 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background-color: #000000;
+	background: url("bg.jpg");
 	padding: 40px 0;
 }
 
@@ -95,7 +95,7 @@ footer {
 }
 
 main {
-
+	
 }
 
 form {
@@ -120,9 +120,9 @@ form label, form legend {
 }
 
 .enviar {
-	width: 40%;
+	width:40%;
 	padding: 15px 0;
-    background: orange;
+	background: orange;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -138,7 +138,7 @@ form label, form legend {
 }
 
 table {
-	margin: 20px 40px;
+	margin: 20px 0 40px;
 }
 
 thead {
@@ -149,13 +149,13 @@ thead {
 
 td, th {
 	border: 1px solid #000000;
-	padding: 8px 15px 
+	padding: 8px 15px;
 }
 
 
 /* css da página inicial */
 .banner {
-    width: 100%;
+	width:100%;
 }
 
 .titulo-principal {
@@ -163,7 +163,6 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
-	color: rgba(0,0,0,0.3);
 }
 
 .principal {
@@ -182,7 +181,7 @@ td, th {
 }
 
 .principal em {
-	font-style: italic ;
+	font-style: italic;
 }
 
 .utensilios {
@@ -238,7 +237,7 @@ td, th {
 	width: 60%;
 	opacity: 1;
 	transition: 400ms;
-	box-shadow: 10px 10px 0 #000000;
+	box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .imagem-beneficios:hover {
@@ -248,4 +247,22 @@ td, th {
 .video {
 	width: 560px;
 	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
 }
